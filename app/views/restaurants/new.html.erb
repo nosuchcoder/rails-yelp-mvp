@@ -1,12 +1,1 @@
-<div class="container">
-  <div class="row">
-    <div class="col">
-      <%= simple_form_for @restaurant do |f| %>
-      <%= f.input :name, placeholder: " Name"%>
-      <%= f.input :address, placeholder: " Location"%>
-      <%= f.input :category, placeholder: " cuisine"%>
-      <%= f.submit "Post restaurant", class: "btn btn-primary" %>
-      <% end %>
-    </div>
-  </div>
-</div>
+<%= render 'form', restaurant: @restaurant %>
